@@ -22,14 +22,14 @@ def _start(client, message):
                         "⭕ Channel ⭕", url="https://t.me/{UPDATES_CHANNEL}")
                 ],[
                     InlineKeyboardButton(
-                        "🛠 Source Code 🛠", url=f"https://github.com/PredatorHackerzZ/TeleRoid-MusicBot")
+                        "🛠 Source Code 🛠", url=f"https://t.me/WantSourceCode")
                 ]
             ]
         ),
         reply_to_message_id=message.message_id
         )
 
-@Client.on_message(filters.command(["start","start@VCsMusicBot"]) & ~filters.private & ~filters.channel)
+@Client.on_message(filters.command(["start","start"]) & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
     await message.reply_text(
         f"""**{PROJECT_NAME} is online.**""",
@@ -37,7 +37,7 @@ async def gstart(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "⭕ Support Group ⭕", url="https://t.me/TeleRoid14"
+                        "⭕ Support Group ⭕", url="https://t.me/CF_Disscussion"
                     )
                 ],    
                 [    
@@ -88,7 +88,7 @@ def map(pos):
             [InlineKeyboardButton("➕ Add me to your Group ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
             [InlineKeyboardButton(text = "👤 Group 👤", url=f"https://t.me/{SUPPORT_GROUP}"),
              InlineKeyboardButton(text = "⭕ Channel ⭕", url=f"https://t.me/{UPDATES_CHANNEL}")],
-            [InlineKeyboardButton(text = "🛠 Source Code 🛠", url="https://github.com/PredatorHackerzZ/TeleRoid-MusicBot")],
+            [InlineKeyboardButton(text = "🛠 Source Code 🛠", url="https://t.me/WantSourceCode")],
             [InlineKeyboardButton(text = "◀️ Back", callback_data = f"help+{pos-1}")]
         ]
     else:
@@ -100,7 +100,7 @@ def map(pos):
         ]
     return button
 
-@Client.on_message(filters.command(["help","help@VCsMusicBot"]) & ~filters.private & ~filters.channel)
+@Client.on_message(filters.command(["help","help"]) & ~filters.private & ~filters.channel)
 async def ghelp(_, message: Message):
     await message.reply_text(
         f"""**Hello there! I can play music in the voice chats of telegram groups & channels.**""",
