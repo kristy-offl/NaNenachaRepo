@@ -37,7 +37,7 @@ Click the below button to watch the video tutorial on deploying
 
 ### Deploy To Heroku 📡</h4>
 
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/PredatorHackerzZ/VCsMusicBot"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="210" height="34.45"/></a></p>
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Kristy-offl/NaNenachaRepo#main"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="210" height="34.45"/></a></p>
 
 ###  GET STRING SESSION FROM REPL RUN
 
@@ -111,13 +111,6 @@ $ python3 -m VCsMusicBot
 - `/cend` - stop music play
 - `/userbotjoinchannel` - invite assistant to your chat
 * channel is also can be used instead of c
-
-If you donlt like to play in linked channel:
- 1. Get your channel ID.
- 2. Rename your group to: Channel Music: your_channel_id
- 3. Add [@NetwokPlayerBot](https://t.me/NetworkPlayerBot) as Channel admin with full perms
- 4. add helper to channel
- 5. Simply send commands in your group.
 
 ### Commands for Sudo Users 👮
 - `/userbotleaveall` - remove assistant from all chats
