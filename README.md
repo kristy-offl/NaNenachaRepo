@@ -46,7 +46,7 @@ Click the below button to watch the video tutorial on deploying
 ### Deploy to VPS 🏃
 ```sh
 # Install Git First (apt-instll git)
-$ git clone https://github.com/PredatorHackerzZ/VCsMusicBot
+$ git clone https://github.com/kristy-offl/NaNenachaRepo 
 $ cd VCsMusicBot
 # Upgrade sources
 # Install All Requirements 
